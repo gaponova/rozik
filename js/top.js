@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('body').append('<div id="toTop"><i class="fa fa-angle-up"></i></div>');
+  $('body').append('<div id="toTop"><i class="fas fa-angle-up"></i></div>');
   $(window).scroll(function() {
       if ($(this).scrollTop() > 200) {
           $('#toTop').fadeIn();
