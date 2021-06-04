@@ -141,7 +141,12 @@
           <h3 class="channel-info__subtitle">Для тех кто в теме и не боится</h3>
         </div>
         <div class="channel-video">
-          <img class="channel-video__poster" src="img/channel-big.jpg" alt="Видео">
+          <div class="channel-wrapper">
+            <div class="relation video">
+              <div class="relation__ratio relation__ratio-16x9"></div>
+              <iframe id="video" class="relation__content" width="560" height="315" src="https://www.youtube.com/embed/0kUkLeYUF4E?" title="YouTube video player"></iframe>
+            </div>
+          </div>
           <a href="#popup" class="youtube-btn">
             <img src="img/youtube.svg" alt="Кнопка">
           </a>
@@ -161,10 +166,35 @@
 
 
 
+  <!-- popups -->
+
+  <!-- <div id="popup" class="popup">
+    <a href="#header" class="popup__area"></a>
+    <div class="popup__body">
+      <div class="popup__content">
+        <a href="#header" class="popup__close"><i class="far fa-times-circle"></i></a>
+        <div class="wrapper">
+          <div class="relation video">
+            <div class="relation__ratio relation__ratio-16x9"></div>
+            <iframe id="video" class="relation__content" width="560" height="315" src="https://www.youtube.com/embed/0kUkLeYUF4E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
   <!-- script JS ============================================ -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/top.js"></script>
+
+  <script type="text/javascript">
+    $('#popup').on('hidden.bs.modal', function () {
+      var videos = $('#video');
+      video.pause()
+    });
+  </script>
+
 </body>
 
 </html>
