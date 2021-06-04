@@ -32,7 +32,7 @@ a {
 }
 
 section {
-  padding: 90px 15px;
+  padding: 9rem 15rem;
 }
 
 /*----------Start header----------*/
@@ -75,7 +75,7 @@ section {
   font-weight: 800;
   color: #FFC700;
   letter-spacing: 5px;
-  line-height: 48px;
+  line-height: 4.8rem;
   ;
 }
 
@@ -93,7 +93,7 @@ section {
 }
 
 .header__list-item {
-  margin-left: 20px;
+  margin-left: 2rem;
   list-style: none;
 }
 
@@ -104,7 +104,7 @@ section {
   line-height: 1.6;
   color: #fff;
   text-decoration: none;
-  padding: 39px 15px;
+  padding: 3rem 1.5rem;
 }
 
 .btn {
@@ -115,7 +115,7 @@ section {
   color: #000;
   background-color: #FFC700;
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 1rem 2rem;
   border: none;
   outline: none;
   transition: 0.3s;
@@ -126,7 +126,7 @@ section {
   background-color: transparent;
   color: #fff;
   border: 1px solid #FFC700;
-  padding: 15px 30px;
+  padding: 1.3rem 3rem;
   transition: 0.3s;
 }
 
@@ -139,8 +139,8 @@ section {
   position: relative;
   z-index: 2;
   font-size: 1.6rem;
-  line-height: 20px;
-  padding: 10px 20px;
+  line-height: 2rem;
+  padding: 1rem 2rem;
   transition: 0.3s;
 }
 
@@ -154,9 +154,109 @@ section {
 
 
 
-/*----------Кнопка для адаптивного меню----------*/
+/*----------Start секции recovery----------*/
+.recovery {
+  background-color: #15293e;
+  padding-top: 12rem;
+  padding-bottom: 10rem;
+}
 
+.hdd {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 -1.5rem;
+  margin-bottom: 6.3rem;
+}
 
+.hdd-item {}
+
+.hdd-item_info {
+  width: calc(47% - 3rem);
+  margin: 0 1.5rem 2rem;
+}
+
+.hdd-item__subtitle {
+  margin-top: 1.9rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  color: rgb(255, 255, 255);
+}
+
+.hdd-item__title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9.1rem;
+  line-height: 9.1rem;
+  font-weight: 800;
+  color: #FFC700;
+  margin: -0.5rem 0 2rem;
+}
+
+.hdd-item__desc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  line-height: 3.9rem;
+  color: #fff;
+  margin: 0 0 3.8rem;
+}
+
+.action {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.action-btn {}
+
+.action-btn:nth-child(2) {
+  margin-left: 3rem;
+}
+
+.btn {}
+
+.btn-transparent {}
+
+.hdd-item_img {
+  width: calc(53% - 3rem);
+  margin: 0 1.5rem 2rem;
+}
+
+.hdd-item__img {
+  margin-top: 6.2rem;
+  margin-left: 0;
+  width: 99%;
+}
+
+.offer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.offer-item {
+  width: calc(33.33% - 30px);
+  margin: 0 15px 23px 0;
+}
+
+.offer__icon {
+  width: 3.6rem;
+  height: 3.6rem;
+}
+
+.offer__i {}
+
+.offer__text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.7rem;
+  color: #fff;
+  margin-top: 1.2rem;
+}
+
+/*----------End секции recovery----------*/
 
 /*----------Кнопка Наверх----------*/
 
@@ -197,11 +297,11 @@ section {
   }
 
   .header__body {
-    height: 60px;
+    height: 6rem;
   }
 
   .header__logo svg {
-    width: 40px;
+    width: 4rem;
   }
 
   .header__burger {
@@ -288,13 +388,13 @@ section {
   }
 
   .header__link {
-    font-size: 18px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    font-size: 1.8rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .help {
-    margin-right: 50px;
+    margin-right: 5.0rem;
   }
 
 }
