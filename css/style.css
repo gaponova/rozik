@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+input:focus,
+textarea:focus {
+  outline: 2px solid red;
+}
 
 body {
   margin: 0;
@@ -157,7 +161,7 @@ section {
 /*----------Start секции recovery----------*/
 .recovery {
   background-color: #15293e;
-  padding-top: 12rem;
+  padding-top: 3rem;
   padding-bottom: 9rem;
 }
 
@@ -343,17 +347,19 @@ section {
 
 /* help-popup */
 
-
-
-.fancybox-content {
-  overflow: visible;
-}
-
-
+.fancybox-content {}
 
 .popup-help {
   position: relative;
+  background-color: #101F2E;
+}
 
+#popup-help {
+  display: none;
+  max-width: 770px;
+  overflow: visible;
+  background-color: #101F2E;
+  border-radius: 20px;
 }
 
 .popup-close {
@@ -388,7 +394,7 @@ section {
   text-align: center;
   color: #FFC700;
   border-radius: 50%;
-  z-index: 1000;
+  z-index: 10;
   transition: 0.3s;
 }
 

@@ -177,15 +177,15 @@
   <!-- popups -->
 
   <div class="popup-help">
-    <div style="display: none;max-width:600px;" id="popup-help">
-      <form action="" method="">
-        <h2>Опишите проблему</h2>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Ваша проблема"></textarea>
-        <input type="email" name="" id="" placeholder="Ваша Email">
-        <input type="number" name="" id="" placeholder="Ваша телефон">
-        <button>Прикрепить файл</button>
+    <div id="popup-help">
+      <form class="help-form" action="" method="">
+        <h2 class="help-form__title">Опишите проблему</h2>
+        <textarea class="help-form__message" name="" id="" cols="30" rows="10" placeholder="Ваша проблема"></textarea>
+        <input class="help-form__email" type="email" name="" id="" placeholder="Ваша Email">
+        <input class="help-form__phone" type="number" name="" id="" placeholder="Ваша телефон">
+        <button class="help-form__file">Прикрепить файл</button>
         <span>Общий вес файлов не более 18 Мб Мб</span>
-        <button>Отправить</button>
+        <button class="btn btn-help">Отправить</button>
         <button data-fancybox-close class="popup-close"><i class="fa fa-times" aria-hidden="true"></i></i></button>
       </form>
     </div>
