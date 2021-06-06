@@ -134,6 +134,7 @@
   <!-- End recovery -->
 
   <!-- Start channel -->
+
   <section class="channel">
     <div class="container">
       <div class="channel-container">
@@ -171,6 +172,39 @@
 
   <!-- Start can -->
 
+  <section class="can">
+    <div class="container">
+      <div class="can-info">
+        <h2 class="can-info__title">Что можно восстановить?</h2>
+        <img class="can-info__img" src="img/can.svg" alt="Сервис">
+      </div>
+      <div class="can-row">
+        <div class="can-item">
+          <ul class="can-list">
+            <li class="can-list__item">Восстановление данных с неисправных жестких дисков в Одессе. Тяжелые случаи с поврежденными внешними HDD после падения или удара; сложные работы с гермоблоком: обрывы головок, заклинивание двигателя, запиливание поверхности, массовые дефекты и т. п.</li>
+            <li class="can-list__item">Восстановление данных с флешек с неисправными контроллерами, изношенной памятью.</li>
+            <li class="can-list__item">Восстановление данных с флешек с неисправными контроллерами, изношенной памятью.</li>
+            <li class="can-list__item">Восстановление данных с NAS со встроенным Linux: QNAP, Synology, WD, D-Link и т. п. Применяется оригинальная методика с высокой достоверностью восстановления.</li>
+            <li class="can-list__item">Восстановление данных при сложных программных проблемах: в т. ч. после установки Windows, Linux поверх данных, после чекдиска, вирусов и т. п.</li>
+            <li class="can-list__item">Восстановление данных с Linux, FreeBSD, MacOS.</li>
+          </ul>
+        </div>
+        <div class="can-item">
+          <ul class="can-list">
+            <li class="can-list__item">Восстановление информации с неисправных SSD: Patriot, Goodram, Kingston с проблемой SATAFIRM S11, а также SP, OCZ, Crucial, Samsung и др. </li>
+            <li class="can-list__item">Восстановление данных с поврежденных CD, DVD - деградация несущего слоя, множественные царапины.</li>
+            <li class="can-list__item">Восстановление информации с RAID-массивов 0, 1, 5, 6 уровней. В том числе сложные случаи с большими объемами, с неисправными 2-мя и более дисками.</li>
+            <li class="can-list__item">Восстановление видео с видеорегистраторов (DVR): в т. ч. с закрытых WFS, DHFS файловых систем. Сложные случаи после форматирования в Windows или ошибочной инициализации в регистраторе.</li>
+            <li class="can-list__item">Восстановления фотографий по авторской методике для тяжелых случаев.</li>
+            <li class="can-list__item">Восстановление данных после неквалифицированного вмешательства, отказа других сервисов, офисов, центров, компаний и лабораторий. Боремся до последнего!</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- End can -->
+
 
 
 
@@ -183,8 +217,10 @@
         <textarea class="help-form__message" name="" id="" placeholder="Ваша проблема"></textarea>
         <input class="help-form__email" type="email" name="" id="" placeholder="Ваша Email">
         <input class="help-form__phone" type="tel" name="" id="" placeholder="Ваша телефон">
-        <button class="help-form__file">Прикрепить файл</button>
-        <span class="help-form__size">Общий вес файлов не более 18 Мб Мб</span>
+        <div class="help-form__file">
+          <button class="help-form__open">Прикрепить файл</button>
+          <span class="help-form__size">Общий вес файлов не более 18 Мб Мб</span>
+        </div>
         <button class="btn btn-help">Отправить</button>
         <button data-fancybox-close class="popup-close"><i class="fa fa-times" aria-hidden="true"></i></i></button>
       </form>

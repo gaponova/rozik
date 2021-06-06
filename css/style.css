@@ -146,6 +146,7 @@ section {
   line-height: 2rem;
   padding: 1rem 2rem;
   transition: 0.3s;
+  margin-top: -5px;
 }
 
 /* Бургер */
@@ -258,7 +259,7 @@ section {
 .channel {
   position: relative;
   background-color: #091724;
-  padding-bottom: 10rem;
+  padding-bottom: 6rem;
 }
 
 .channel-container {
@@ -327,13 +328,75 @@ section {
   margin: 0 auto 3.5rem;
 }
 
-
 /*----------End секции channel----------*/
 
 
 /*----------Start секции can----------*/
 
+.can {
+  background-color: #15293e;
+  padding-bottom: 8rem;
+}
 
+.can-info {
+  position: relative;
+  margin-bottom: 61px;
+}
+
+.can-info__title {
+  margin: 14px 0;
+  max-width: 752px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5.2rem;
+  line-height: 5.2rem;
+  font-weight: 800;
+  color: #FFC700;
+}
+
+.can-info__img {
+  position: absolute;
+  bottom: -4px;
+  right: 60px;
+}
+
+.can-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -15px;
+}
+
+.can-item {
+  width: calc(44% - 30px);
+  margin: 0 15px 20px;
+}
+
+.can-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.can-list__item {
+  position: relative;
+  margin: 0px 0 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+  color: #ffffff;
+  padding-left: 39px;
+}
+
+.can-list__item:last-child {
+  margin-bottom: 0;
+}
+
+.can-list__item::before {
+  content: url(../img/check.svg);
+  position: absolute;
+  top: 5px;
+  left: 7px;
+}
 
 /*----------End секции can----------*/
 
@@ -354,6 +417,7 @@ section {
   background-color: #101F2E;
   border-radius: 20px;
   padding: 59px 65px;
+  box-shadow: 0 5px 20px 0px rgb(0, 0, 0, 0.2);
 }
 
 .help-form {}
@@ -397,6 +461,10 @@ section {
 }
 
 .help-form__file {
+  margin-bottom: 35px;
+}
+
+.help-form__open {
   display: inline-block;
   border: 0;
   font-family: 'Montserrat', sans-serif;
@@ -405,7 +473,7 @@ section {
   background: transparent;
   color: #FFC700;
   cursor: pointer;
-  margin-bottom: 35px;
+
 }
 
 .help-form__size {
