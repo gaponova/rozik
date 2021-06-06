@@ -10,7 +10,7 @@
 
 input:focus,
 textarea:focus {
-  outline: 2px solid red;
+  outline: 1px solid #415263;
 }
 
 body {
@@ -85,7 +85,7 @@ section {
 
 .header__menu {
   margin-left: auto;
-  margin-right: 3.7rem;
+  margin-right: 4.1rem;
 }
 
 .header__list {
@@ -322,10 +322,6 @@ section {
   left: 65.5%;
 }
 
-
-
-
-
 .channel-wrapper {
   position: relative;
   margin: 0 auto 3.5rem;
@@ -349,17 +345,75 @@ section {
 
 .fancybox-content {}
 
-.popup-help {
-  position: relative;
-  background-color: #101F2E;
-}
+.popup-help {}
 
 #popup-help {
+  position: relative;
   display: none;
-  max-width: 770px;
   overflow: visible;
   background-color: #101F2E;
   border-radius: 20px;
+  padding: 59px 65px;
+}
+
+.help-form {}
+
+.help-form__title {
+  margin: 0 0 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: #FFC700;
+}
+
+.help-form__message {
+  min-height: 115px;
+}
+
+.help-form__message,
+.help-form__email,
+.help-form__phone {
+  display: block;
+  width: 100%;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  color: #BBBBBB;
+  background-color: #101F2E;
+  border: 1px solid #3C4C5C;
+  outline: none;
+  padding: 19px 20px 20px;
+  margin-bottom: 20px;
+}
+
+.help-form__message::placeholder,
+.help-form__email::placeholder,
+.help-form__phone::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  color: #BBBBBB;
+}
+
+.help-form__file {
+  display: inline-block;
+  border: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  background: transparent;
+  color: #FFC700;
+  cursor: pointer;
+  margin-bottom: 35px;
+}
+
+.help-form__size {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  color: #BBBBBB;
 }
 
 .popup-close {
@@ -368,6 +422,7 @@ section {
   right: -31px;
   background-color: transparent;
   border: 0;
+  cursor: pointer;
 }
 
 .fa-times {
