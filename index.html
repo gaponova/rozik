@@ -59,7 +59,7 @@
         </nav>
         <div class="help">
           <!-- <button class="btn help-btn">Помогите!</button> -->
-          <a data-fancybox data-src="#popup-help" data-modal="true" href="javascript:;" class="btn help-btn">Помогите</a>
+          <a data-fancybox data-src="#popup-help" data-modal="true" href="javascript:;" class="btn btn-help">Помогите</a>
         </div>
       </div>
     </div>
@@ -158,10 +158,12 @@
           </div>
 
         </div>
-        <div class="channel-badge">
-          <img class="channel-badge__img" src="img/youtube-big.svg" alt="Youtube-канал">
-        </div>
+
       </div>
+      <div class="channel-badge">
+        <img class="channel-badge__img" src="img/youtube-big.svg" alt="Youtube-канал">
+      </div>
+    </div>
   </section>
 
 
@@ -171,19 +173,21 @@
 
 
 
-  <!-- <a href="https://youtu.be/0kUkLeYUF4E" data-fancybox>
-    <img src="img/channel-big.jpg" alt="">
-  </a> -->
-
 
   <!-- popups -->
 
   <div class="popup-help">
     <div style="display: none;max-width:600px;" id="popup-help">
-      <h2>I'm a modal!</h2>
-      <p>You can close me only by pressing custom button below.</p>
-      <p>It would also be possible to prevent closing using `beforeClose` callback.</p>
-      <button data-fancybox-close class="popup-close"><i class="fa fa-times" aria-hidden="true"></i></i></button>
+      <form action="" method="">
+        <h2>Опишите проблему</h2>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Ваша проблема"></textarea>
+        <input type="email" name="" id="" placeholder="Ваша Email">
+        <input type="number" name="" id="" placeholder="Ваша телефон">
+        <button>Прикрепить файл</button>
+        <span>Общий вес файлов не более 18 Мб Мб</span>
+        <button>Отправить</button>
+        <button data-fancybox-close class="popup-close"><i class="fa fa-times" aria-hidden="true"></i></i></button>
+      </form>
     </div>
   </div>
 
