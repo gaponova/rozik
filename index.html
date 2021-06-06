@@ -19,6 +19,7 @@
 
   <!-- style CSS ============================================ -->
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="css/style.css">
 
   <title>Rozyk</title>
@@ -57,7 +58,8 @@
           </ul>
         </nav>
         <div class="help">
-          <button class="btn help-btn">Помогите!</button>
+          <!-- <button class="btn help-btn">Помогите!</button> -->
+          <a data-fancybox data-src="#popup-help" data-modal="true" href="javascript:;" class="btn help-btn">Помогите</a>
         </div>
       </div>
     </div>
@@ -132,7 +134,6 @@
   <!-- End recovery -->
 
   <!-- Start channel -->
-
   <section class="channel">
     <div class="container">
       <div class="channel-container">
@@ -142,58 +143,60 @@
         </div>
         <div class="channel-video">
           <div class="channel-wrapper">
-            <div class="relation video">
-              <div class="relation__ratio relation__ratio-16x9"></div>
-              <iframe id="video" class="relation__content" width="560" height="315" src="https://www.youtube.com/embed/0kUkLeYUF4E?" title="YouTube video player"></iframe>
-            </div>
+
+            <img src="img/channel-big.jpg" alt="">
+
+            <a href="https://youtu.be/0kUkLeYUF4E" data-fancybox class="youtube-btn">
+              <img src="img/youtube.svg" alt="Кнопка">
+            </a>
           </div>
-          <a href="#popup" class="youtube-btn">
-            <img src="img/youtube.svg" alt="Кнопка">
-          </a>
-        </div>
-        <div class="channel-desc">
-          <h3 class="channel-desc__risk">Всё что вы сделаете своими руками — вы делаете на свой страх и риск!</h3>
-        </div>
-        <div class="action">
-          <a class="action-btn btn btn-transparent" href="https://www.youtube.com/channel/UCLiRuHqOyugLbX7WzZqkU6Q">Подписаться</a>
+          <div class="channel-desc">
+            <h3 class="channel-desc__risk">Всё что вы сделаете своими руками — вы делаете на свой страх и риск!</h3>
+          </div>
+          <div class="action">
+            <a class="action-btn btn btn-transparent" href="https://www.youtube.com/channel/UCLiRuHqOyugLbX7WzZqkU6Q">Подписаться</a>
+          </div>
+
         </div>
         <div class="channel-badge">
           <img class="channel-badge__img" src="img/youtube-big.svg" alt="Youtube-канал">
         </div>
       </div>
-    </div>
   </section>
 
+
+  <!-- End channel -->
+
+  <!-- Start can -->
+
+
+
+  <!-- <a href="https://youtu.be/0kUkLeYUF4E" data-fancybox>
+    <img src="img/channel-big.jpg" alt="">
+  </a> -->
 
 
   <!-- popups -->
 
-  <!-- <div id="popup" class="popup">
-    <a href="#header" class="popup__area"></a>
-    <div class="popup__body">
-      <div class="popup__content">
-        <a href="#header" class="popup__close"><i class="far fa-times-circle"></i></a>
-        <div class="wrapper">
-          <div class="relation video">
-            <div class="relation__ratio relation__ratio-16x9"></div>
-            <iframe id="video" class="relation__content" width="560" height="315" src="https://www.youtube.com/embed/0kUkLeYUF4E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
+  <div class="popup-help">
+    <div style="display: none;max-width:600px;" id="popup-help">
+      <h2>I'm a modal!</h2>
+      <p>You can close me only by pressing custom button below.</p>
+      <p>It would also be possible to prevent closing using `beforeClose` callback.</p>
+      <button data-fancybox-close class="popup-close"><i class="fa fa-times" aria-hidden="true"></i></i></button>
     </div>
-  </div> -->
+  </div>
+
 
   <!-- script JS ============================================ -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/top.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
-  <script type="text/javascript">
-    $('#popup').on('hidden.bs.modal', function () {
-      var videos = $('#video');
-      video.pause()
-    });
-  </script>
+
+  <script src="js/popups.js"></script>
+
 
 </body>
 

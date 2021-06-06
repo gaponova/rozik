@@ -291,7 +291,7 @@ section {
 }
 
 .youtube-btn {
-  display: none;
+  display: block;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -321,112 +321,52 @@ section {
 
 
 
-/* channel-popup */
 
-.popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: block;
-  visibility: hidden;
-  overflow-y: auto;
-  overflow-x: hidden;
-  transition: 0.8s;
-  z-index: 9999;
-}
-
-.popup:target {
-  opacity: 1;
-  visibility: visible;
-}
-
-.popup:target .popup__content {
-  transform: translate(0px, 0px);
-  opacity: 1;
-}
-
-.popup__area {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.popup__body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100%;
-  padding: 30px 10px;
-}
-
-.popup__content {
-  position: relative;
-  width: 1200px;
-  background-color: #fff;
-  color: #000;
-  opacity: 0;
-  transform: translate(0px, -100%);
-  transition: 0.8s;
-}
-
-.popup__close {
-  position: absolute;
-  top: -36px;
-  right: -34px;
-  color: #fff;
-  z-index: 5;
-  font-size: 33px;
-}
 
 .channel-wrapper {
-  margin: 0 auto;
-}
-
-.relation {
   position: relative;
-  margin: 0 auto;
+  margin: 0 auto 3.5rem;
 }
 
-.video {
-  max-width: 1200px;
-}
-
-.relation__ratio {
-  padding-top: 56.25%;
-  height: 0;
-}
-
-.relation iframe {
-  border: none;
-}
-
-.relation__content {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgb(0, 0, 0);
-}
-
-.relation__ratio-16x9 {
-  padding-top: 56.25%;
-}
-
-.relation__ratio-1x1 {
-  padding-top: 100%;
-}
-
-.relation__ratio-4x3 {
-  padding-top: 75%;
-}
 
 /*----------End секции channel----------*/
+
+
+/*----------Start секции can----------*/
+
+
+
+/*----------End секции can----------*/
+
+
+
+/*----------Start Modal Windows----------*/
+
+/* help-popup */
+
+.fancybox-content {
+  overflow: visible;
+}
+
+.popup-help {
+  position: relative;
+
+}
+
+.popup-close {
+  position: absolute;
+  top: -24px;
+  right: -31px;
+  background-color: transparent;
+  border: 0;
+}
+
+.fa-times {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+/*----------End Modal Windows----------*/
 
 
 /*----------Кнопка Наверх----------*/
