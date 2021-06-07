@@ -112,14 +112,14 @@ section {
 }
 
 .btn {
-  display: block;
+  display: inline-block;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
   color: #000;
   background-color: #FFC700;
   border-radius: 5px;
-  padding: 1rem 2rem;
+  padding: 10px 20px;
   border: none;
   outline: none;
   transition: 0.3s;
@@ -130,7 +130,7 @@ section {
   background-color: transparent;
   color: #fff;
   border: 1px solid #FFC700;
-  padding: 1.3rem 3rem;
+  padding: 13px 30px;
   transition: 0.3s;
 }
 
@@ -143,10 +143,14 @@ section {
   position: relative;
   z-index: 2;
   font-size: 1.6rem;
-  line-height: 2rem;
-  padding: 1rem 2rem;
+  line-height: 20px;
+  padding: 10px 20px;
   transition: 0.3s;
   margin-top: -5px;
+}
+
+.btn-feedback {
+  padding: 14px 31px;
 }
 
 /* Бургер */
@@ -401,12 +405,82 @@ section {
 /*----------End секции can----------*/
 
 
+/*----------Start секции service----------*/
+
+.service {
+  background-color: #091724;
+  padding-top: 93px;
+  padding-bottom: 99px;
+}
+
+.service__title {
+  margin: 0 0 5.6rem;
+  max-width: 752px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5.2rem;
+  line-height: 5.2rem;
+  font-weight: 800;
+  color: #FFC700;
+}
+
+.service__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -15px 4.3rem;
+}
+
+.service-item {
+  position: relative;
+  padding-top: 6.7rem;
+  width: 19%;
+}
+
+.service-item:first-child {
+  margin-left: 15px;
+}
+
+.service-item:last-child {
+  margin-right: 15px;
+}
+
+
+.service-item__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.service-item__title {
+  margin: 0 0 0.8rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.7rem;
+  font-weight: bold;
+  line-height: 2.3rem;
+  color: #ffffff;
+}
+
+.service-item__info {
+  margin: 0 0 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  color: #ffffff;
+}
+
+/*----------End секции service----------*/
+
+
+/*----------Start footer----------*/
+
+
+
+/*----------End footer----------*/
+
 
 /*----------Start Modal Windows----------*/
 
 /* help-popup */
-
-.fancybox-content {}
 
 .popup-help {}
 
@@ -487,7 +561,7 @@ section {
 .popup-close {
   position: absolute;
   top: -24px;
-  right: -31px;
+  right: -3px;
   background-color: transparent;
   border: 0;
   cursor: pointer;
@@ -518,7 +592,6 @@ section {
   color: #FFC700;
   border-radius: 50%;
   z-index: 10;
-  transition: 0.3s;
 }
 
 #toTop:hover {
