@@ -473,7 +473,119 @@ section {
 
 /*----------Start footer----------*/
 
+footer {
+  background-color: #15293e;
+  padding-top: 93px;
+  padding-bottom: 99px;
+}
 
+.footer-top {
+  margin-bottom: 16px;
+}
+
+.footer__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -15px;
+}
+
+.footer-item {
+  width: calc(28% - 30px);
+  margin: 0 15px 20px;
+}
+
+.footer-item:nth-child(1) {
+  width: calc(33% - 30px);
+}
+
+.footer-item:nth-child(2) {
+  padding-left: 10px;
+}
+
+.phone-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.phone-list {
+  margin: 0px 28px 0 0;
+  padding: 0;
+}
+
+.phone-list__number {
+  font-family: Montserrat;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 130%;
+  list-style: none;
+  margin-bottom: 3px;
+}
+
+.phone-list__number a {
+  color: #fff;
+}
+
+.phone-message {}
+
+.phone-message__telegram {
+  margin-right: 14px;
+}
+
+.phone-message__viber {}
+
+.footer-item__contact {
+  margin: 0 0 7px 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #fff;
+}
+
+.footer-item__yellow {
+  color: #FFC700;
+  margin-right: 10px;
+}
+
+.footer-item__white {}
+
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.social__item {
+  margin: 0 14px;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+}
+
+.footer__logo {
+  margin-right: 25px;
+}
+
+.logo {}
+
+.footer-nfo {
+  max-width: 470px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #FFFFFF;
+  opacity: 0.6;
+
+}
+
+.footer-nfo__text {
+  margin: 0;
+}
 
 /*----------End footer----------*/
 
@@ -494,7 +606,9 @@ section {
   box-shadow: 0 5px 20px 0px rgb(0, 0, 0, 0.2);
 }
 
-.help-form {}
+.help-form {
+  width: 100%;
+}
 
 .help-form__title {
   margin: 0 0 30px;
@@ -513,7 +627,7 @@ section {
 .help-form__phone {
   display: block;
   width: 100%;
-
+  max-width: 640px;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.3rem;
   line-height: 1.8rem;
@@ -528,6 +642,8 @@ section {
 .help-form__message::placeholder,
 .help-form__email::placeholder,
 .help-form__phone::placeholder {
+  width: 100%;
+
   font-family: 'Montserrat', sans-serif;
   font-size: 1.3rem;
   line-height: 1.8rem;
