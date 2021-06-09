@@ -82,8 +82,11 @@
           </h1>
           <p class="hdd-item__desc">Жёсткие диски, SSD, флешки, СD/DVD, RAID-массивы, NAS, DVR</p>
           <div class="action">
-            <a data-fancybox data-src="#popup-help" data-modal="true" href="javascript:;" class="action-btn btn btn-transparent" href="#">Полный список</a>
-            <a class="action-btn btn btn-transparent" href="#">Связаться</a>
+            <!-- <a data-fancybox data-src="#popup-list" href="javascript:;" class="action-btn btn btn-transparent" href="#">Полный список</a> -->
+            <!-- <a data-fancybox data-src="#popup-list" data-modal="true" href="javascript:;" class="action-btn btn btn-transparent" href="#">Полный список</a> -->
+            <a href="#can" class="action-btn btn btn-transparent"><span class="btn-hover">Полный список</span></a>
+
+            <a data-fancybox="" data-src="#popup-help" data-modal="true" href="javascript:;" class="action-btn btn btn-yellow" href="#">Связаться</a>
           </div>
         </div>
         <div class="hdd-item hdd-item_img">
@@ -156,7 +159,8 @@
             <h3 class="channel-desc__risk">Всё что вы сделаете своими руками — вы делаете на свой страх и риск!</h3>
           </div>
           <div class="action">
-            <a class="action-btn btn btn-transparent" href="https://www.youtube.com/channel/UCLiRuHqOyugLbX7WzZqkU6Q">Подписаться</a>
+            <a class="action-btn btn btn-transparent" href="https://www.youtube.com/channel/UCLiRuHqOyugLbX7WzZqkU6Q"><span class="btn-hover">Подписаться</span></a>
+            </a>
           </div>
 
         </div>
@@ -173,7 +177,7 @@
 
   <!-- Start can -->
 
-  <section class="can">
+  <section class="can" id="can">
     <div class="container">
       <div class="can-info">
         <h2 class="can-info__title">Что можно восстановить?</h2>
@@ -268,9 +272,18 @@
           </div>
           <div class="footer-item">
             <div class="social">
-              <img class="social__item" src="img/fb.svg" alt="Facebook">
+              <!-- <img class="social__item" src="img/fb.svg" alt="Facebook">
               <img class="social__item" src="img/y-tube.svg" alt="Youtube">
-              <img class="social__item" src="img/telegram.svg" alt="Telegram">
+              <img class="social__item" src="img/telegram.svg" alt="Telegram"> -->
+              <a class="social__link" href="#"><svg class="social__item" width="16" height="30" viewBox="0 0 16 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.94666 29.8264H10.1333C10.1333 29.8264 10.1333 21.6131 10.1333 14.8931H14.9333L15.4667 9.66641H10.1333V6.35974C10.1333 5.18641 10.6667 5.07974 11.2 5.07974C11.7333 5.07974 15.36 5.07974 15.36 5.07974V0.0664062H10.4533C5.01333 0.0664062 3.94666 3.90641 3.94666 6.35974V9.77307H0.533325V14.9997H3.94666C3.94666 21.7197 3.94666 29.8264 3.94666 29.8264Z" fill="#FFC700" />
+                </svg></a>
+              <a class="social__link" href="#"><svg class="social__item" width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M27.7 4.3C27.7 4.3 27.4 2.3 26.6 1.5C25.5 0.4 24.3 0.4 23.8 0.3C19.9 0 14 0 14 0C14 0 8.1 0 4.2 0.3C3.7 0.4 2.5 0.4 1.4 1.5C0.6 2.4 0.3 4.3 0.3 4.3C0.3 4.3 0 6.6 0 8.9V11.1C0 13.4 0.3 15.7 0.3 15.7C0.3 15.7 0.6 17.7 1.4 18.5C2.5 19.6 3.9 19.6 4.5 19.7C6.7 19.9 14 20 14 20C14 20 19.9 20 23.8 19.7C24.3 19.6 25.5 19.6 26.6 18.5C27.4 17.6 27.7 15.7 27.7 15.7C27.7 15.7 28 13.4 28 11.1V8.9C28 6.6 27.7 4.3 27.7 4.3ZM11.1 13.7V5.7L18.7 9.7L11.1 13.7Z" fill="#FFC700" />
+                </svg></a>
+              <a class="social__link" href="#"><svg class="social__item" width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M29.0171 0C28.9201 0 28.823 0 28.726 0.102362L0.582283 11.3622C-0.194094 11.6693 -0.194094 12.8976 0.582283 13.2047L7.08444 15.5591L11.0634 23.8504C11.1604 23.9528 11.2575 24.0551 11.4516 24.0551C11.5486 24.0551 11.6457 24.0551 11.7427 23.9528L15.4305 20.6772L11.3545 17.4016L11.6457 21.7008L8.73424 15.252L24.4559 5.32283L11.3545 17.4016L21.5445 25.5906C21.9327 25.8976 22.3208 26 22.612 26C23.3884 26 24.1647 25.4882 24.4559 24.5669L29.9876 1.33071C30.0846 0.511811 29.5994 0 29.0171 0Z" fill="#FFC700" />
+                </svg></a>
             </div>
           </div>
         </div>
@@ -310,6 +323,30 @@
       </form>
     </div>
   </div>
+
+  <!-- <div class="popup-list">
+    <div id="popup-list" style="width: 900px;">
+      <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, maxime.</p>
+      </div>
+      <button data-fancybox-close class="popup-list__close"><i class="fa fa-times list-close" aria-hidden="true"></i></i></button>
+    </div>
+  </div> -->
+
+
+  <!-- <div class="card" id="popup-list">
+    <div class="card-body">
+      <p>
+        #1 - Default example
+      </p>
+      <div style="display: none;" id="modal">
+        <h2>Hello!</h2>
+        <p>You are awesome!</p>
+      </div>
+
+    </div>
+  </div> -->
+
 
 
   <!-- script JS ============================================ -->

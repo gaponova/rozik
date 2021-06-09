@@ -105,7 +105,7 @@ section {
   display: block;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
-  line-height: 1.6;
+  line-height: 1.6rem;
   color: #fff;
   text-decoration: none;
   padding: 3rem 1.5rem;
@@ -135,8 +135,28 @@ section {
 }
 
 .btn-transparent:hover {
-  color: #000;
+  border: 1px solid #FFE37E;
+  box-shadow: 0 0 13px 0 rgb(255 199 0 / 40%);
+  text-shadow: 0 0 9px rgb(255 199 0 / 40%);
+}
+
+.btn-transparent:hover .btn-hover {
+  text-shadow: 0 0 9px rgb(255 199 0 / 40%);
+}
+
+.btn-yellow {
   background-color: #FFC700;
+  color: #000;
+  border: 1px solid #FFC700;
+  padding: 13px 30px;
+  transition: 0.3s;
+}
+
+.btn-yellow:hover,
+.btn-help:hover,
+.btn-feedback:hover {
+  background-color: #FFE37E;
+  box-shadow: 0 4px 10px 0 rgb(255 199 0 / 40%);
 }
 
 .btn-help {
@@ -152,6 +172,7 @@ section {
 .btn-feedback {
   padding: 14px 31px;
 }
+
 
 /* Бургер */
 
@@ -221,7 +242,7 @@ section {
 }
 
 .hdd-item_img {
-  width: calc(53% - 3rem);
+  width: calc(53% - 30px);
   margin: 0 1.5rem 2rem;
 }
 
@@ -244,8 +265,8 @@ section {
 }
 
 .offer__icon {
-  width: 3.6rem;
-  height: 3.6rem;
+  width: 36px;
+  height: 36px;
 }
 
 .offer__text {
@@ -556,9 +577,20 @@ footer {
   align-items: center;
 }
 
+
 .social__item {
   margin: 0 14px;
 }
+
+.social__item path {
+  transition: 0.3s;
+}
+
+.social__item:hover path {
+  fill: #FFE37E;
+  transition: 0.2s;
+}
+
 
 .footer-bottom {
   display: flex;
@@ -588,6 +620,7 @@ footer {
 }
 
 /*----------End footer----------*/
+
 
 
 /*----------Start Modal Windows----------*/
@@ -688,6 +721,22 @@ footer {
   font-size: 20px;
 }
 
+/* list-popup */
+
+.popup-list {
+  position: relative;
+}
+
+.popup-list__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.list-close {
+  color: red;
+}
+
 /*----------End Modal Windows----------*/
 
 
@@ -733,7 +782,7 @@ footer {
   }
 
   .header__logo svg {
-    width: 4rem;
+    width: 40px;
   }
 
   .header__burger {
