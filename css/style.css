@@ -36,7 +36,7 @@ a {
 }
 
 section {
-  padding: 9rem 1.5rem;
+  padding: 9rem 0;
 }
 
 /*----------Start header----------*/
@@ -50,7 +50,7 @@ section {
   z-index: 50;
 }
 
-/* .header::before {
+.header::before {
   content: "";
   position: absolute;
   top: 0;
@@ -59,7 +59,7 @@ section {
   height: 100%;
   background-color: #15293e;
   z-index: 2;
-} */
+}
 
 .header__body {
   position: relative;
@@ -71,7 +71,7 @@ section {
 
 .header__logo {
   position: relative;
-  z-index: 3;
+  z-index: 2;
 }
 
 .logo {
@@ -161,7 +161,7 @@ section {
 
 .btn-help {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   font-size: 1.6rem;
   line-height: 20px;
   padding: 10px 20px;
@@ -171,6 +171,10 @@ section {
 
 .btn-feedback {
   padding: 14px 31px;
+}
+
+.action-btn {
+  margin-bottom: 20px;
 }
 
 
@@ -297,6 +301,16 @@ section {
 }
 
 .channel-info__title {
+  margin: 1px 0 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5.2rem;
+  line-height: 5.2rem;
+  font-weight: 800;
+  color: #FFC700;
+}
+
+.br {
+  display: none;
   margin: 1px 0 20px;
   font-family: 'Montserrat', sans-serif;
   font-size: 5.2rem;
@@ -448,13 +462,14 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 -15px 4.3rem;
+  margin: 0 -15px 22px;
 }
 
 .service-item {
   position: relative;
   padding-top: 6.7rem;
   width: 19%;
+  margin-bottom: 20px;
 }
 
 .service-item:first-child {
@@ -770,11 +785,25 @@ footer {
 
 @media only screen and (max-width: 1200px) {}
 
-@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 1024px) {
+
+  .hdd-item__title {
+    font-size: 8rem;
+  }
+
+  .can-info__img {
+    right: -27px;
+  }
+}
 
 @media only screen and (max-width: 992px) {
+
   body.lock {
     overflow: hidden;
+  }
+
+  .header {
+    position: fixed;
   }
 
   .header__body {
@@ -857,6 +886,25 @@ footer {
     top: 0;
   }
 
+  /* .header__menu {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    background-color: #091724;
+    padding: 6.2rem 1rem 2rem 1rem;
+    transition: 0.3s;
+    opacity: 0;
+  }
+
+  .header__menu.active {
+    display: block;
+    opacity: 1;
+  } */
+
   .header__list {
     display: block;
   }
@@ -864,8 +912,7 @@ footer {
   .header__list-item {
     margin: 0;
     text-align: center;
-    border-bottom: 1px solid #15293e;
-
+    border-bottom: 1px solid rgb(8%, 16%, 24%, 0.4);
   }
 
   .header__link {
@@ -876,6 +923,359 @@ footer {
 
   .help {
     margin-right: 5.0rem;
+  }
+
+  .recovery {
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+  }
+
+  .channel-container {
+    max-width: 950px;
+    margin: 0 auto;
+  }
+
+  .channel-badge {
+    width: 32%;
+  }
+
+  .service-item {
+    width: calc(22% - 30px);
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .footer-item:nth-child(1) {
+    width: calc(43% - 30px);
+  }
+
+  .social {
+    justify-content: flex-end;
+  }
+
+  #toTop {
+    bottom: 10px;
+    right: 25px;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .hdd-item__title {
+    font-size: 5rem;
+  }
+
+  .del {
+    display: none;
+  }
+
+  .hdd-item_info {
+    width: 100%;
+  }
+
+  .hdd-item_img {
+    display: none;
+  }
+
+  .offer {
+    margin: 0 -15px;
+  }
+
+  .offer-item {
+    width: calc(50% - 30px);
+    margin: 0 15px 20px;
+  }
+
+
+
+  .channel-badge {
+    display: none;
+  }
+
+  .can-item {
+    width: 100%;
+  }
+
+  .can-info__img {
+    display: none;
+  }
+
+  .service {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  .service-item {
+    width: calc(50% - 30px);
+    margin-bottom: 30px;
+  }
+
+  .fancybox-slide--html {
+    padding: 15px;
+  }
+
+  .fancybox-slide {
+    padding: 15px;
+  }
+
+  .can {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  .footer-item,
+  .footer-item:nth-child(1) {
+    width: calc(50% - 30px);
+    margin-bottom: 40px;
+  }
+
+  .footer-item:nth-child(2) {
+    padding-left: 0;
+  }
+
+  .footer__row {
+    justify-content: center;
+  }
+
+  .social {
+    justify-content: center;
+  }
+
+
+
+  footer {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+}
+
+@media only screen and (max-width: 540px) {
+
+  .hdd-item_info {
+    text-align: center;
+  }
+
+  .hdd-item__title {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+
+  .action {
+    justify-content: center;
+  }
+
+  .offer {
+    justify-content: center;
+  }
+
+  .offer-item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .offer__icon {
+    margin: 0 auto;
+  }
+
+  .channel-info,
+  .can-info {
+    text-align: center;
+  }
+
+  .can-info__title {
+    font-size: 4rem;
+  }
+
+
+  .channel-info__title {
+    font-size: 3.9rem;
+  }
+
+  .service-item {
+    width: calc(510% - 30px);
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .service__title {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .service-item__icon {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .feedback {
+    text-align: center;
+  }
+
+  .footer-item,
+  .footer-item:nth-child(1) {
+    width: 100%;
+    text-align: center;
+  }
+
+  .phone-container {
+    position: relative;
+    justify-content: center;
+  }
+
+  .phone-list {
+    margin-right: 0;
+
+  }
+
+  .phone-message__telegram {
+    position: absolute;
+    top: 0;
+    left: 90px;
+  }
+
+  .phone-message__viber {
+    position: absolute;
+    top: 0;
+    right: 90px;
+  }
+
+  .footer-bottom {
+    display: block;
+    text-align: center;
+  }
+
+  .footer__logo {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .help-form__open {
+    margin-bottom: 15px;
+  }
+
+  #popup-help {
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  .hdd-item__title,
+  .can-info__title,
+  .service__title,
+  .br {
+    font-size: 3rem;
+  }
+
+  .channel-info__title {
+    display: none;
+  }
+
+  .br {
+    display: block;
+  }
+
+  .btn-help {
+    position: absolute;
+    top: 80px;
+    left: 84px;
+    z-index: -1;
+  }
+
+  .hdd-item__subtitle {
+    font-size: 2rem;
+    margin-top: 5rem;
+  }
+
+  .header__burger {
+    top: 18px;
+  }
+
+  .btn-transparent {
+    margin-bottom: 20px;
+  }
+
+  .recovery {
+    padding-top: 4rem;
+    padding-bottom: 0rem;
+  }
+
+  .help {
+    position: absolute;
+    top: -65px;
+    left: 29px;
+    z-index: 2;
+  }
+
+  .action-btn:nth-child(2) {
+    width: 190px;
+    margin-left: 0;
+  }
+
+  .hdd-item__desc {
+    margin-bottom: 30px;
+  }
+
+  .channel {
+    padding: 5rem 0 4rem;
+  }
+
+  .channel-video {
+    margin-bottom: 0;
+  }
+
+  .can {
+    padding: 3rem 0;
+  }
+
+  .service {
+    padding: 4rem 0;
+  }
+
+  .service__row {
+    margin-bottom: 0;
+  }
+
+  .phone-list__number {
+    font-size: 20px;
+  }
+
+  .phone-message__telegram {
+    left: -5px;
+  }
+
+  .phone-message__viber {
+    right: -5px;
+  }
+
+  .footer-item {
+    margin-bottom: 30px;
+  }
+
+  .footer__logo {
+    margin-right: 0;
+  }
+
+  .footer-top {
+    margin-bottom: 0;
+  }
+
+  footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  #toTop {
+    bottom: 5px;
+    right: 5px;
   }
 
 }
