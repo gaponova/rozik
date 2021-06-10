@@ -201,7 +201,7 @@ section {
   align-items: center;
   justify-content: space-between;
   margin: 0 -1.5rem;
-  margin-bottom: 6.3rem;
+  margin-bottom: 4.3rem;
 }
 
 .hdd-item_info {
@@ -247,7 +247,7 @@ section {
 
 .hdd-item_img {
   width: calc(53% - 30px);
-  margin: 0 1.5rem 2rem;
+  margin: -19px 1.5rem 2rem;
 }
 
 .hdd-item__img {
@@ -288,7 +288,7 @@ section {
 .channel {
   position: relative;
   background-color: #091724;
-  padding-bottom: 6rem;
+  padding-bottom: 4rem;
 }
 
 .channel-container {
@@ -470,6 +470,17 @@ section {
   padding-top: 6.7rem;
   width: 19%;
   margin-bottom: 20px;
+}
+
+.service-item::before {
+  content: url(../img/Arrow.svg);
+  position: absolute;
+  top: 38%;
+  right: -50px;
+}
+
+.service-item:last-child::before {
+  display: none;
 }
 
 .service-item:first-child {
@@ -796,9 +807,30 @@ footer {
     font-size: 8rem;
   }
 
-  .can-info__img {
-    right: -27px;
+  .channel-badge {
+    width: 32%;
+    top: 151px;
+    left: 60.5%;
   }
+
+  .can-info__img {
+    right: 81px;
+    width: 31%;
+  }
+
+  .hdd-item__img {
+    width: 99%;
+  }
+
+  #toTop {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .service-item::before {
+    display: none;
+  }
+
 }
 
 @media only screen and (max-width: 992px) {
@@ -940,9 +972,7 @@ footer {
     margin: 0 auto;
   }
 
-  .channel-badge {
-    width: 32%;
-  }
+
 
   .service-item {
     width: calc(22% - 30px);
@@ -969,6 +999,7 @@ footer {
 
   .hdd-item__title {
     font-size: 5rem;
+    line-height: 50px;
   }
 
   .del {
@@ -1056,19 +1087,28 @@ footer {
 
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 600px) {
 
   .hdd-item_info {
     text-align: center;
   }
 
-  .hdd-item__title {
-    font-size: 5rem;
-    line-height: 5rem;
-  }
+
 
   .action {
-    justify-content: center;
+    display: block;
+  }
+
+  .action-btn {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .action-btn:nth-child(2) {
+    margin-left: 0;
+    margin: 0 auto;
   }
 
   .offer {
@@ -1136,16 +1176,9 @@ footer {
 
   }
 
-  .phone-message__telegram {
+  .phone-message {
     position: absolute;
-    top: 0;
-    left: 90px;
-  }
-
-  .phone-message__viber {
-    position: absolute;
-    top: 0;
-    right: 90px;
+    top: -40px;
   }
 
   .footer-bottom {
@@ -1165,9 +1198,9 @@ footer {
   #popup-help {
     padding: 15px;
   }
-}
 
-@media only screen and (max-width: 480px) {
+
+
 
   .logo {
     font-size: 2rem;
@@ -1191,7 +1224,7 @@ footer {
   .btn-help {
     position: absolute;
     top: 80px;
-    left: 84px;
+    left: 160px;
     z-index: -1;
   }
 
@@ -1220,10 +1253,7 @@ footer {
     z-index: 2;
   }
 
-  .action-btn:nth-child(2) {
-    width: 190px;
-    margin-left: 0;
-  }
+
 
   .hdd-item__desc {
     margin-bottom: 30px;
@@ -1241,9 +1271,7 @@ footer {
     padding: 3rem 0;
   }
 
-  .service {
-    padding: 4rem 0;
-  }
+
 
   .service__row {
     margin-bottom: 0;
@@ -1251,14 +1279,6 @@ footer {
 
   .phone-list__number {
     font-size: 20px;
-  }
-
-  .phone-message__telegram {
-    left: -5px;
-  }
-
-  .phone-message__viber {
-    right: -5px;
   }
 
   .footer-item {
@@ -1274,7 +1294,7 @@ footer {
   }
 
   footer {
-    padding-top: 5rem;
+    padding-top: 9rem;
     padding-bottom: 5rem;
   }
 
@@ -1283,4 +1303,8 @@ footer {
     right: 5px;
   }
 
+
+
 }
+
+@media only screen and (max-width: 480px) {}
