@@ -816,6 +816,7 @@ footer {
   .can-info__img {
     right: 81px;
     width: 31%;
+    margin-top: 21.2rem;
   }
 
   .hdd-item__img {
@@ -962,6 +963,14 @@ footer {
     margin-right: 5.0rem;
   }
 
+  .hdd-item_info {
+    width: calc(52% - 3rem);
+  }
+
+  .hdd-item_img {
+    width: calc(48% - 30px);
+  }
+
   .recovery {
     padding-top: 10rem;
     padding-bottom: 6rem;
@@ -995,7 +1004,7 @@ footer {
 
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 880px) {
 
   .hdd-item__title {
     font-size: 5rem;
@@ -1307,4 +1316,10 @@ footer {
 
 }
 
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 400px) {
+
+  .help {
+    left: -48px;
+  }
+
+}
