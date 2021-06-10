@@ -1102,8 +1102,6 @@ footer {
     text-align: center;
   }
 
-
-
   .action {
     display: block;
   }
@@ -1141,7 +1139,6 @@ footer {
   .can-info__title {
     font-size: 4rem;
   }
-
 
   .channel-info__title {
     font-size: 3.9rem;
@@ -1208,9 +1205,6 @@ footer {
     padding: 15px;
   }
 
-
-
-
   .logo {
     font-size: 2rem;
   }
@@ -1228,13 +1222,6 @@ footer {
 
   .br {
     display: block;
-  }
-
-  .btn-help {
-    position: absolute;
-    top: 80px;
-    left: 160px;
-    z-index: -1;
   }
 
   .hdd-item__subtitle {
@@ -1255,15 +1242,6 @@ footer {
     padding-bottom: 0rem;
   }
 
-  .help {
-    position: absolute;
-    top: -65px;
-    left: 29px;
-    z-index: 2;
-  }
-
-
-
   .hdd-item__desc {
     margin-bottom: 30px;
   }
@@ -1279,8 +1257,6 @@ footer {
   .can {
     padding: 3rem 0;
   }
-
-
 
   .service__row {
     margin-bottom: 0;
@@ -1311,8 +1287,6 @@ footer {
     bottom: 5px;
     right: 5px;
   }
-
-
 
 }
 
