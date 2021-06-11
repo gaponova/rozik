@@ -466,8 +466,6 @@ section {
 }
 
 .service-item {
-  display: flex;
-  flex-direction: column;
   position: relative;
   padding-top: 6.7rem;
   width: 19%;
@@ -517,7 +515,6 @@ section {
   font-size: 1.5rem;
   line-height: 1.7rem;
   color: #ffffff;
-  margin-top: auto;
 }
 
 /*----------End секции service----------*/
