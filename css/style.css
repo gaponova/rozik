@@ -466,6 +466,8 @@ section {
 }
 
 .service-item {
+  display: flex;
+  flex-direction: column;
   position: relative;
   padding-top: 6.7rem;
   width: 19%;
@@ -492,6 +494,7 @@ section {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.7rem;
   font-weight: bold;
+  word-wrap: break-word;
   line-height: 2.3rem;
   color: #ffffff;
 }
@@ -514,6 +517,7 @@ section {
   font-size: 1.5rem;
   line-height: 1.7rem;
   color: #ffffff;
+  margin-top: auto;
 }
 
 /*----------End секции service----------*/
@@ -1136,7 +1140,7 @@ footer {
   }
 
   .service-item {
-    width: calc(510% - 30px);
+    width: calc(100% - 30px);
     text-align: center;
     margin-bottom: 60px;
   }
