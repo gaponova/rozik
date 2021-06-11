@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- favicon ============================================ -->
-  <link rel="shortcut icon" type="images/png" href="" />
+  <link rel="shortcut icon" type="images/png" href="#" />
 
   <!-- font-awesome CSS ============================================ -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
@@ -86,7 +86,7 @@
             <!-- <a data-fancybox data-src="#popup-list" data-modal="true" href="javascript:;" class="action-btn btn btn-transparent" href="#">Полный список</a> -->
             <a href="#can" class="action-btn btn btn-transparent"><span class="btn-hover">Полный список</span></a>
 
-            <a data-fancybox="" data-src="#popup-help" data-modal="true" href="javascript:;" class="action-btn btn btn-yellow" href="#">Связаться</a>
+            <a data-fancybox="" data-src="#popup-help" data-modal="true" href="javascript:;" class="action-btn btn btn-yellow">Связаться</a>
           </div>
         </div>
         <div class="hdd-item hdd-item_img">
@@ -132,7 +132,6 @@
         </div>
       </div>
     </div>
-    </div>
   </section>
 
   <!-- End recovery -->
@@ -161,11 +160,8 @@
           </div>
           <div class="action">
             <a class="action-btn btn btn-transparent" href="https://www.youtube.com/channel/UCLiRuHqOyugLbX7WzZqkU6Q"><span class="btn-hover">Подписаться</span></a>
-            </a>
           </div>
-
         </div>
-
       </div>
       <div class="channel-badge">
         <img class="channel-badge__img" src="img/youtube-big.svg" alt="Youtube-канал">
@@ -293,11 +289,11 @@
         <a href="#" class="footer__logo">
           <span class="logo">ROZIK</span>
         </a>
-        <div class="footer-nfo">
-          <p class="footer-nfo__text">ФЛП Розизнаный В. Н. (выписка 2 556 000 0000 109521 от 25.11.2013),
+        <div class="footer-info">
+          <p class="footer-info__text">ФЛП Розизнаный В. Н. (выписка 2 556 000 0000 109521 от 25.11.2013),
             95.11 - ремонт компьютеров и периферийного оборудования.
           </p>
-          <pclass="footer-nfo__text">Плательщик единого налога (свид. А 534419). </pclass=>
+          <p class="footer-info__text">Плательщик единого налога (свид. А 534419). </p>
         </div>
       </div>
     </div>
@@ -310,17 +306,18 @@
 
   <div class="popup-help">
     <div id="popup-help" style="width: 770px;">
-      <form class="help-form" action="" method="">
+      <form class="help-form" action="#" method="post">
         <h2 class="help-form__title">Опишите проблему</h2>
-        <textarea class="help-form__message" name="" id="" placeholder="Ваша проблема"></textarea>
-        <input class="help-form__email" type="email" name="" id="" placeholder="Ваша Email">
-        <input class="help-form__phone" type="tel" name="" id="" placeholder="Ваша телефон">
+        <textarea class="help-form__message" name="message" id="message" placeholder="Ваша проблема"></textarea>
+        <input class="help-form__email" type="email" name="email" id="email" placeholder="Ваш Email">
+        <input class="help-form__phone" type="tel" name="phone" id="phone" placeholder="Ваш телефон">
         <div class="help-form__file">
           <button class="help-form__open">Прикрепить файл</button>
           <span class="help-form__size">Общий вес файлов не более 18 Мб Мб</span>
         </div>
         <button class="btn btn-help">Отправить</button>
-        <button data-fancybox-close class="popup-close"><i class="fa fa-times" aria-hidden="true"></i></i></button>
+        <button data-fancybox-close class="popup-close"><i class="fa fa-times" aria-hidden="true"></i></button>
+
       </form>
     </div>
   </div>
