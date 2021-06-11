@@ -472,17 +472,6 @@ section {
   margin-bottom: 20px;
 }
 
-.service-item::before {
-  content: url(../img/Arrow.svg);
-  position: absolute;
-  top: 38%;
-  right: -50px;
-}
-
-.service-item:last-child::before {
-  display: none;
-}
-
 .service-item:first-child {
   margin-left: 15px;
 }
@@ -505,6 +494,18 @@ section {
   font-weight: bold;
   line-height: 2.3rem;
   color: #ffffff;
+}
+
+.service-item__title::before {
+  position: absolute;
+  content: url(../img/Arrow.svg);
+  top: 53px;
+  right: -49px;
+}
+
+
+.service-item:last-child .service-item__title::before {
+  display: none;
 }
 
 .service-item__info {
@@ -818,9 +819,6 @@ footer {
     right: 15px;
   }
 
-  .service-item::before {
-    display: none;
-  }
 
 }
 
@@ -971,8 +969,6 @@ footer {
     margin: 0 auto;
   }
 
-
-
   .service-item {
     width: calc(22% - 30px);
     margin-right: 15px;
@@ -1022,8 +1018,6 @@ footer {
     margin: 0 15px 20px;
   }
 
-
-
   .channel-badge {
     display: none;
   }
@@ -1044,6 +1038,10 @@ footer {
   .service-item {
     width: calc(50% - 30px);
     margin-bottom: 30px;
+  }
+
+  .service-item__title::before {
+    display: none;
   }
 
   .fancybox-slide--html {
@@ -1076,8 +1074,6 @@ footer {
   .social {
     justify-content: center;
   }
-
-
 
   footer {
     padding-top: 7rem;
@@ -1134,15 +1130,29 @@ footer {
     font-size: 3.9rem;
   }
 
+  .service {
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+  }
+
   .service-item {
     width: calc(510% - 30px);
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
 
   .service__title {
     font-size: 4rem;
     text-align: center;
+  }
+
+  .service-item__title::before {
+    display: block;
+    position: absolute;
+    content: url(../img/Arrow.svg);
+    top: 143px;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
   }
 
   .service-item__icon {
